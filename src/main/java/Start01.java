@@ -116,10 +116,19 @@ public class Start01 {
         Cycles.rightTriangle(4);
 
 
-        Cycles.guessGame();
+        //Cycles.guessGame();
 
-        int [] arr = {1,2,3,4,2,2,5};
+
+        int[] arr = {1, 2, 3, 4, 2, 2, 5};
         System.out.println(Massiv.findFirst(arr, 2));
+
+
+
+        int[] arr2 = {1, 2, 3, 4, 2, 2, 5};
+        System.out.println(Massiv.findFirst2(arr2, 2));
+
+
+
 
 
 
