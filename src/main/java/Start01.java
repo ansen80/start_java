@@ -128,6 +128,15 @@ public class Start01 {
         System.out.println(Massiv.findFirst2(arr2, 2));
 
 
+        int[] arr3 = {1,-2,-7,4,2,2,5};
+        System.out.println(Massiv.maxAbs(arr3));
+
+
+        int[] arr4={1,-2,-7,4,2,2,5};
+        System.out.println(Massiv.countPositive(arr4));
+
+
+
 
 
 
