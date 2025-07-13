@@ -67,4 +67,61 @@ public class Massiv {
     }
 
 
+    public static int[] concat(int[] arr8, int[] arr9) { /*Необходимо реализовать метод таким образом,
+    чтобы он возвращал новый массив, в котором сначала идут элементы первого массива (<b>arr1</b>),
+    а затем второго (<b>arr2</b>).*/
+        int[] result = new int[arr8.length + arr9.length];
+        for(int i=0; i < arr8.length; i++) {
+           result[i] = arr8[i];
+        }
+        for(int i=0; i< arr9.length; i++) {
+            result[arr8.length + i] = arr9[i];
+        }
+
+        return result;
+
+    }
+
+
+    public static int[] findAll(int[] arr10, int x) { /*Необходимо реализовать метод таким образом, чтобы
+    он возвращал новый массив, в котором записаны индексы всех вхождений числа <b>x</b> в массив <b>arr</b>.*/
+        int[] indx = new int[arr10.length];
+        int count = 0;
+        for (int i = 0; i < arr10.length; i++) {
+            if (arr10[i] == x) {
+                indx[count++] = i;
+            }
+        }
+        if (count == arr10.length) {
+            return indx;
+        }
+        int[] res = new int[count];
+        System.arraycopy(indx, 0, res, 0, count);
+        return res;
+    }
+
+
+
+    public static int[] deleteNegative(int[] arr11) { /*Необходимо реализовать метод таким образом, чтобы он возвращал
+    новый массив, в котором записаны все элементы массива <b>arr</b> кроме отрицательных.*/
+        int count = 0;
+        for (int num : arr11) {
+            if (num >= 0) {
+                count++;
+            }
+        }
+        // 2. Создаём новый массив нужного размера
+        int[] result = new int[count];
+        // 3. Заполняем новый массив положительными элементами
+        int index = 0;
+        for (int num : arr11) {
+            if (num >= 0) {
+                result[index++] = num;
+            }
+        }
+        return result;
+    }
+
+
+
 }

@@ -148,6 +148,25 @@ public class Start01 {
         System.out.println(Arrays.toString(arr7));
 
 
+        int[] arr8 = {1, 2, 3};
+        int[] arr9 = {7, 8, 9};
+        int[] result = Massiv.concat(arr8, arr9);
+        System.out.println(Arrays.toString(result));
+
+
+        int[] arr10 = {1, 2, 3, 8, 2, 2, 9};
+        int x = 2;
+        // Вызов метода из класса Massiv
+        int[] res = Massiv.findAll(arr10, x);
+        // Вывод результата
+        System.out.println("Индексы числа " + x + ": " + Arrays.toString(res));
+
+
+        int[] arr11 = {1, 2, -3, 4, -2, 2, -5};
+        int[] res1 = Massiv.deleteNegative(arr11);
+        System.out.println(Arrays.toString(res1));
+
+
 
 
 
